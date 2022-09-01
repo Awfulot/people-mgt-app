@@ -19,35 +19,35 @@
     </ul>
 </div>
 <div class="border-2 border-black rounded-md w-1/2 mt-10 p-3">
-    <p class="text-center">Add Employees</p>
-    <form id="add-employees">
+    <p class="text-center p-2">Add Employees</p>
+    <form id="add-employees" class="flex justify-center items-center space-x-3">
         <input type="text" class="border border-black" id="employee-name-add" placeholder="Name" required>
         <input type="number" class="border border-black" id="employee-pay-add" placeholder="Pay" required>
 
-        <select id="employee-add-selector">
+        <select id="employee-add-selector" class="border border-black">
             <option>Tester</option>
             <option>Hr</option>
             <option>Dev</option>
             <option>Janitor</option>
         </select>
-        <input type="submit">
+        <input type="submit" value="Add Employee" class="border border-black">
     </form>
 </div>
 <div class="border-2 border-black rounded-md w-1/2 mt-10 p-3">
-    <p class="text-center">Update Employees</p>
-    <form id="update-employees">
-        <select id="employee-update-selector">
+    <p class="text-center p-2">Update Employees</p>
+    <form id="update-employees" class="flex justify-center items-center space-x-3">
+        <select id="employee-update-selector" class="border border-black">
             <option>test</option>
         </select>
         <input type="number" class="border border-black" id="employee-pay-update" placeholder="Pay Increase" required>
-        <select id="employee-role-update">
+        <select id="employee-role-update" class="border border-black">
             <option>Tester</option>
             <option>Hr</option>
             <option>Dev</option>
             <option>Janitor</option>
         </select>
 
-        <input type="submit">
+        <input type="submit" value="Update Employee" class="border border-black">
     </form>
 </div>
 <script src ="employee-mod.js"></script>
