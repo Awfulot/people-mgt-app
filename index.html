@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>People MGT App</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="border-2 border-black rounded-md w-1/2 text-center p-3">
+    <h1>Employees</h1>
+    <ul id="employees-display">
+        <li>Bob 160 Dev </li>
+        <li>Tom 120 HR</li>
+        <li>Rob 100 Janitor</li>
+    </ul>
+</div>
+<div class="border-2 border-black rounded-md w-1/2 mt-10 p-3">
+    <p class="text-center">Add Employees</p>
+    <form id="add-employees">
+        <input type="text" class="border border-black" id="employee-name-add" placeholder="Name" required>
+        <input type="number" class="border border-black" id="employee-pay-add" placeholder="Pay" required>
+
+        <select id="employee-add-selector">
+            <option>Tester</option>
+            <option>Hr</option>
+            <option>Dev</option>
+            <option>Janitor</option>
+        </select>
+        <input type="submit">
+    </form>
+</div>
+<div class="border-2 border-black rounded-md w-1/2 mt-10 p-3">
+    <p class="text-center">Update Employees</p>
+    <form id="update-employees">
+        <select id="employee-update-selector">
+            <option>test</option>
+        </select>
+        <input type="number" class="border border-black" id="employee-pay-update" placeholder="Pay Increase" required>
+        <select id="employee-role-update">
+            <option>Tester</option>
+            <option>Hr</option>
+            <option>Dev</option>
+            <option>Janitor</option>
+        </select>
+
+        <input type="submit">
+    </form>
+</div>
+<script src ="employee-mod.js"></script>
+</body>
+</html>
